@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
   require("lazysizes/plugins/respimg/ls.respimg.js");
   require("lazysizes");
 }
-Zipy.init("c784b808");
+Zipy.init("00d07887");
 
 const MyApp = ({ Component, pageProps }) => (
   <>
