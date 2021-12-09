@@ -6,6 +6,7 @@ import React from "react";
 import Layout from "components/common/Layout";
 import ContextProvider from "lib/context";
 import "styles.css";
+
 import Zipy from "zipyai";
 
 if (typeof window !== "undefined") {
