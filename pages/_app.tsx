@@ -7,13 +7,13 @@ import Layout from "components/common/Layout";
 import ContextProvider from "lib/context";
 import "styles.css";
 
-import Zipy from "zipyai";
+import Zipy from "zipy-staging-nextjs";
 
 if (typeof window !== "undefined") {
   require("lazysizes/plugins/attrchange/ls.attrchange.js");
   require("lazysizes/plugins/respimg/ls.respimg.js");
   require("lazysizes");
-  Zipy.init("00d07887", {releaseVer: "Conduit v13.0"});
+  Zipy.init("c784b808", {releaseVer: "Conduit v13.0"});
 }
 
 const MyApp = ({ Component, pageProps }) => (
