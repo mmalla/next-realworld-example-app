@@ -40,10 +40,12 @@ const LoginForm = () => {
         phone: "9911221234",
         cname: "hospital.com",
         homepage: "http://manishamalla.com",
-        genericData: "Should not see this"
+        genericData: "Should not see this",
+        "emp id": "67786",
+        "client-id": "1234"
       }
-      demodata["emp id"] = "35678";
-      demodata["client-id"] = "1234";
+      //demodata["emp id"] = "35678";
+      //demodata["client-id"] = "1234";
       Zipy.identify("12345", demodata);
       
       if (data?.user) {
