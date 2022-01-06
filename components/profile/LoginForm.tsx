@@ -46,16 +46,7 @@ const LoginForm = () => {
       }
       //demodata["emp id"] = "35678";
       //demodata["client-id"] = "1234";
-      Zipy.identify("12345", {
-        firstName : "Manisha",
-        lastName:  "Malla",
-        customerName: " Test Customer",
-        avatar : "http://general.com/avatar",
-        phone: "9911221234",
-        cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        genericData: "Should not see this"
-      });
+      Zipy.identify("12345", demodata);
       
       if (data?.user) {
         window.localStorage.setItem("user", JSON.stringify(data.user));
