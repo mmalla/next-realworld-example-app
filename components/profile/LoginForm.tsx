@@ -54,9 +54,7 @@ const LoginForm = () => {
         phone: "9911221234",
         cname: "hospital.com",
         homepage: "http://manishamalla.com",
-        genericData: "Should not see this",
-        "emp id": "67786",
-        "client-id": "1234"
+        genericData: "Should not see this"
       });
       
       if (data?.user) {
