@@ -6,6 +6,8 @@ import SettingsForm from "../../components/profile/SettingsForm";
 import checkLogin from "../../lib/utils/checkLogin";
 import storage from "../../lib/utils/storage";
 
+import Zipy from "zipy-staging-nextjs";
+
 const Settings = ({ res }) => {
   const { data: currentUser } = useSWR("user", storage);
   const isLoggedIn = checkLogin(currentUser);
@@ -25,6 +27,7 @@ const Settings = ({ res }) => {
     window.localStorage.removeItem("user");
     mutate("user", null);
     Router.push(`/`).then(() => trigger("user"));
+    Zipy.anonymize();
   };
 
   return (
