@@ -19,7 +19,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "swr": "^0.3.0",
-    "zipyai": "^1.0.0"
+    "zipy-staging-nextjs": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",
