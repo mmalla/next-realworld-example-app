@@ -6,7 +6,7 @@ import SettingsForm from "../../components/profile/SettingsForm";
 import checkLogin from "../../lib/utils/checkLogin";
 import storage from "../../lib/utils/storage";
 
-import Zipy from "zipy-staging-nextjs";
+import Zipy from "zipyai";
 
 const Settings = ({ res }) => {
   const { data: currentUser } = useSWR("user", storage);
