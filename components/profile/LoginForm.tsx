@@ -5,7 +5,7 @@ import { mutate } from "swr";
 import ListErrors from "../common/ListErrors";
 import UserAPI from "../../lib/api/user";
 
-import Zipy from "zipyai";
+import Zipy from "zipy-test-v1";
 
 const LoginForm = () => {
   const [isLoading, setLoading] = React.useState(false);
