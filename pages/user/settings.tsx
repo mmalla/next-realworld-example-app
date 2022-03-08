@@ -8,6 +8,7 @@ import storage from "../../lib/utils/storage";
 
 import Zipy from "zipy-staging-nextjs";
 
+
 const Settings = ({ res }) => {
   const { data: currentUser } = useSWR("user", storage);
   const isLoggedIn = checkLogin(currentUser);
