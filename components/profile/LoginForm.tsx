@@ -32,10 +32,11 @@ const LoginForm = () => {
         setErrors(data.errors);
       }
       Zipy.identify(email , {
+        firstName: "",
+        lastName:"",
         customerName: "Pixelphone Inc.",
         phone: "202-555-0112",
       });
-      
       if (data?.user) {
         window.localStorage.setItem("user", JSON.stringify(data.user));
         mutate("user", data?.user);
