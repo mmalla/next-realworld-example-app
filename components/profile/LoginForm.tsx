@@ -31,32 +31,9 @@ const LoginForm = () => {
       if (status !== 200) {
         setErrors(data.errors);
       }
-
-      let demodata = {
-        firstName : "Manisha",
-        lastName:  "Malla",
-        customerName: " Test Customer",
-        avatar : "http://general.com/avatar",
-        phone: "9911221234",
-        cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        genericData: "Should not see this",
-        "emp id": "67786",
-        "client-id": "1234"
-      }
-      //demodata["emp id"] = "35678";
-      //demodata["client-id"] = "1234";
-      Zipy.identify("12345", {
-        firstName : "Manisha",
-        lastName:  "Malla",
-        customerName: " Test Customer",
-        avatar : "http://general.com/avatar",
-        phone: "9911221234",
-        cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        genericData: "Should not see this",
-        "emp id": "67786",
-        "client-id": "1234"
+      Zipy.identify(email , {
+        customerName: "Pixelphone Inc.",
+        phone: "202-555-0112",
       });
       
       if (data?.user) {
