@@ -32,8 +32,8 @@ const LoginForm = () => {
         setErrors(data.errors);
       }
       Zipy.identify(email , {
-        firstName: "",
-        lastName:"",
+        firstName: "Mark",
+        lastName: "Reader",
         customerName: "Pixelphone Inc.",
         phone: "202-555-0112",
       });
