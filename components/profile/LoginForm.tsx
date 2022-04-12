@@ -31,7 +31,7 @@ const LoginForm = () => {
       if (status !== 200) {
         setErrors(data.errors);
       }
-      Zipy.identify(email , {
+      Zipy.identify("conduit_test" , {
         firstName: "Mark",
         lastName: "Reader",
         age: "30",
