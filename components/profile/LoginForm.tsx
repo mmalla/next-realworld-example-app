@@ -43,6 +43,8 @@ const LoginForm = () => {
         mutate("user", data?.user);
         Router.push("/");
       }
+      let sessionURL = Zipy.getCurrentSessionURL();
+      console.log("sessionURL",sessionURL); 
     } catch (error) {
       console.error(error);
     } finally {
