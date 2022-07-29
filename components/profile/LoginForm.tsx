@@ -55,7 +55,6 @@ const LoginForm = () => {
       
     } catch (error) {
       console.error(error);
-      reject();
     } finally {
       setLoading(false);
     }
