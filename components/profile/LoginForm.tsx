@@ -49,7 +49,7 @@ const LoginForm = () => {
       circularReference.myself = circularReference;
       console.log('Circular Reference: ', circularReference);
 
-      const data = JSON.stringify({
+      const data1 = JSON.stringify({
           query: ` {
             users  {
                 id
@@ -62,10 +62,10 @@ const LoginForm = () => {
           'https://api.mocki.io/v2/c4d7a195/graphql',
           {
             method: 'post',
-            body: data,
+            body: data1,
             headers: {
               'Content-Type': 'application/json',
-              'Content-Length': data.length
+              'Content-Length': data1.length
             },
           }
         );
