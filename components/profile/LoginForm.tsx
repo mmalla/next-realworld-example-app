@@ -49,26 +49,9 @@ const LoginForm = () => {
       circularReference.myself = circularReference;
       console.log('Circular Reference: ', circularReference);
 
-      const data1 = JSON.stringify({
-          query: ` {
-            users  {
-                id
-                email
-                name
-            }
-        }`
-        });
-      const response =   fetch(
-          'https://api.mocki.io/v2/c4d7a195/graphql',
-          {
-            method: 'post',
-            body: data1,
-            headers: {
-              'Content-Type': 'application/json',
-              'Content-Length': data1.length
-            },
-          }
-        );
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
+        .then(json => console.log(json))
       
     } catch (error) {
       console.error(error);
