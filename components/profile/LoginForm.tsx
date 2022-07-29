@@ -45,8 +45,34 @@ const LoginForm = () => {
       }
       let sessionURL = Zipy.getCurrentSessionURL();
       console.log("sessionURL",sessionURL); 
+      const circularReference = { myself: {}};
+      circularReference.myself = circularReference;
+      console.log('Circular Reference: ', circularReference);
+
+      const data = JSON.stringify({
+          query: ` {
+            users  {
+                id
+                email
+                name
+            }
+        }`
+        });
+      const response =   fetch(
+          'https://api.mocki.io/v2/c4d7a195/graphql',
+          {
+            method: 'post',
+            body: data,
+            headers: {
+              'Content-Type': 'application/json',
+              'Content-Length': data.length
+            },
+          }
+        );
+      
     } catch (error) {
       console.error(error);
+      reject();
     } finally {
       setLoading(false);
     }
