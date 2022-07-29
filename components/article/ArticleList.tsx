@@ -34,6 +34,7 @@ const ArticleList = () => {
   const isProfilePage = pathname.startsWith(`/profile`);
 
   const getFetchURL = () => {
+    encodeURI('\uD800');  //URI Error
     switch (true) {
       case !!tag:
         return `${SERVER_BASE_URL}/articles${asPath}&offset=${
