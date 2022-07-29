@@ -34,8 +34,6 @@ const ArticleList = () => {
   const isProfilePage = pathname.startsWith(`/profile`);
 
   const getFetchURL = () => {
-    const myError = new Error("please improve your code");
-    throw myError;
     switch (true) {
       case !!tag:
         return `${SERVER_BASE_URL}/articles${asPath}&offset=${
