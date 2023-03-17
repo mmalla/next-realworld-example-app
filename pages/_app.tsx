@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
   require("lazysizes/plugins/attrchange/ls.attrchange.js");
   require("lazysizes/plugins/respimg/ls.respimg.js");
   require("lazysizes");
-  Zipy.init("14bd2479", {releaseVer: "Conduit v13.1"});
+  Zipy.init("5c19b510", {releaseVer: "Conduit v13.1"});
 }
 
 const MyApp = ({ Component, pageProps }) => (
