@@ -7,7 +7,7 @@ import Layout from "components/common/Layout";
 import ContextProvider from "lib/context";
 import "styles.css";
 
-import Zipy from "zipyai";
+import Zipy from "zipy-staging-nextjs";
 
 if (typeof window !== "undefined") {
   require("lazysizes/plugins/attrchange/ls.attrchange.js");
